@@ -1,0 +1,693 @@
+@font-face {
+  font-family: "Avara";
+  src: url("./FT88-School.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./arialnarrow.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("./FT88-Italic.otf") format("truetype");
+}
+
+.intro {
+  position: fixed;
+  font-family: "Italic", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  top: 330px;
+  right: 50px;
+  left: 50px;
+}
+
+.down {
+  scale: 6%;
+  margin-top: -300px;
+  transition: opacity 0.3s;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.contactgegevens {
+  font-family: "Helvetica", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  width: 95%;
+}
+
+.contactgegevens p {
+  margin-left: 75px;
+}
+
+.contactgegevens p a {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: "Italic", sans-serif;
+  font-size: 13px;
+}
+
+.header {
+  position: fixed;
+  margin: 3%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+#logo {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.button {
+  font-family: "Helvetica", sans-serif;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.head {
+  width: 700px;
+  font-size: large;
+  text-align: left;
+  font-family: "Italic", serif;
+}
+
+a {
+  font-family: "Helvetica", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+#nav ul li {
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+#nav ul li button {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+#sortLuca:hover {
+  color: whitesmoke;
+  cursor: url("book.png"), auto;
+}
+
+#sortEhb:hover {
+  color: whitesmoke;
+  cursor: url("laptop.png"), auto;
+}
+
+#realLife:hover {
+  color: whitesmoke;
+  cursor: url("object.png"), auto;
+}
+
+#contact:hover {
+  color: whitesmoke;
+  cursor: url("mail.png"), auto;
+}
+
+#introtekst {
+  font-family: "Helvetica";
+  font-size: 60%;
+  transition: color 0.5s ease, filter 0.5s ease;
+}
+
+.knopjeInfo {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.knopjeInfo img.info {
+  width: 18px;
+  height: 18px;
+}
+
+.footer {
+  position: fixed;
+  left: 2%;
+  bottom: 0;
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  color: white;
+}
+
+#instagram {
+  width: 2%;
+}
+
+.imgBlur {
+  display: block;
+  filter: none;
+}
+
+.content {
+  position: absolute;
+  font-family: "Helvetica", sans-serif;
+  border-radius: 25px;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+  top: 8%;
+  bottom: 0;
+  right: 7%;
+  height: max-content;
+  width: 70%;
+  display: none;
+}
+
+.blurred {
+  filter: blur(5px);
+}
+
+.blurred video {
+  filter: blur(5px);
+}
+
+.visible video {
+  filter: none;
+}
+
+.content.visible {
+  display: flex;
+  filter: none;
+}
+
+.imgBlur.blurred,
+.carousel-images.blurred {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.page {
+  display: flex;
+  position: relative;
+  margin-top: 15%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+}
+
+.work {
+  padding-top: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.workD {
+  padding-top: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.workT {
+  padding-top: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  box-sizing: border-box;
+}
+
+.title img video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page img {
+  width: 35%;
+}
+
+.work img {
+  width: 35%;
+}
+
+.sjaalScale {
+  scale: 90%;
+  width: 30%;
+}
+
+#letters {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  padding: 3%;
+}
+
+#letters .images {
+  width: 45%;
+}
+
+#lettersE {
+  width: 100%;
+  position: relative;
+}
+
+#lettersT {
+  width: 100%;
+  position: relative;
+}
+
+#fahrenheit {
+  width: 100%;
+  justify-content: center;
+  padding: 2%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
+#fahrenheitE,
+#fahrenheitT {
+  width: 20%;
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+#fahrenheitT {
+  margin-top: 26%;
+  margin-left: -5%;
+}
+
+#hekerock {
+  width: 100%;
+  justify-content: center;
+  padding: 2%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
+#hekerockE {
+  width: 25%;
+  position: relative;
+}
+
+#hekerockT {
+  width: 25%;
+  margin-top: 20%;
+  margin-left: -5%;
+  position: relative;
+}
+
+#filmposter {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#filmposterE {
+  position: relative;
+  width: 45%;
+}
+
+#intmotion {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+  width: 100%;
+  padding: 2%;
+}
+
+#intE,
+#intT,
+#intD {
+  position: relative;
+}
+
+#sjaal {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.sjaalNina {
+  display: flex;
+  justify-content: space-around;
+  width: 19%;
+  flex-direction: column;
+}
+
+#sjaalE,
+#sjaalT {
+  width: 100%;
+  position: relative;
+}
+
+#sjaalD {
+  width: 30%;
+  position: relative;
+}
+
+#plaat {
+  width: 100%;
+  justify-content: center;
+  padding: 2%;
+  height: auto;
+  display: flex;
+  gap: 1%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#plaatE,
+#plaatT,
+#plaatD {
+  width: 40%;
+  position: relative;
+}
+
+#hoofden {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#hoofden .slide img {
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* #verzameling {
+  position: relative;
+  width: 580px;
+  top: 200px;
+  height: 500px;
+}
+
+#verzamelingE {
+  width: 500px;
+  right: 150px;
+  position: absolute;
+}
+
+#verzamelingT {
+  width: 500px;
+  top: 130px;
+  left: 150px;
+  position: absolute;
+} */
+
+#motion {
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  gap: 1%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#experience {
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  gap: 1%;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+#winx {
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+#winx1 {
+  width: 50%;
+  position: relative;
+}
+
+#winx2 {
+  width: 50%;
+  z-index: 100;
+  margin-right: -33%;
+  position: relative;
+}
+
+#winx3 {
+  width: 50%;
+  position: relative;
+}
+
+#masters {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#masters2 {
+  width: 45%;
+  position: relative;
+}
+
+#masters4 {
+  width: 25%;
+  position: relative;
+}
+
+.posters {
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+#masters6,
+#masters5 {
+  width: 90%;
+  position: relative;
+}
+
+#masters3 {
+  width: 20%;
+  top: 70%;
+  right: 10%;
+  position: fixed;
+}
+
+#rosas {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 5%;
+}
+
+#rosas img {
+  width: 35%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+#canape {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+#canape a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: underline;
+}
+
+#canape1 {
+  width: 40%;
+  position: relative;
+  justify-content: center;
+}
+
+#stuk {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  position: relative;
+}
+
+#imagesStuk {
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 5%;
+}
+
+#stuk1,
+#stuk2,
+#stuk3 {
+  width: 45%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+#stuk4 {
+  width: 26%;
+}
+
+#roos {
+  width: 20%;
+  top: 70%;
+  left: 10%;
+  position: fixed;
+}
+
+#image-carousel {
+  position: relative;
+  top: 200px;
+}
+
+.buttop {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  width: 3rem;
+  height: 3rem;
+
+  transform: translateY(-50%);
+}
+
+.buttop--previous {
+  left: 1.5rem;
+
+  transform: rotate(180deg);
+}
+
+.buttop--next {
+  right: 1.5rem;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+
+  background-color: none;
+
+  scroll-snap-align: center;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  font-family: sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+}

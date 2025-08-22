@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="./index.html">
+        <div class="head blurr">
+          <h1>
+            Hello!! <br />
+            I'm Nina Breedstraet <br />
+            Here is my work 🤩
+          </h1>
+        </div>
+      </a>
+
+      <div id="nav">
+        <ul>
+          <li>
+            <button class="button" type="button" id="sortLuca">
+              <a href="./luca.html" id="sortLuca">Publications</a>
+            </button>
+          </li>
+          <li>
+            <button class="button" type="button" id="sortEhb">
+              <a href="./ehb.html" id="sortEhb">Digital</a>
+            </button>
+          </li>
+          <li>
+            <button class="button" type="button" id="realLife">
+              <a href="./real.html" id="realLife">Objects</a>
+            </button>
+          </li>
+          <li>
+            <button class="button" type="button" id="contact">
+              <a href="./contact.html" id="contact">Contact</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="workD">
+      <div class="title" id="filmposter">
+        <img
+          class="imgBlur"
+          id="filmposterE"
+          src="./LUCA/IMG_3829.png"
+          alt="filmposter"
+        />
+        <button class="knopjeInfo">
+          <img class="info" src="./info.png" alt="info" />
+        </button>
+        <div class="content">
+          <p>
+            In my second year at Luca School of Arts, we were assigned to create
+            a concept for a fictional radio station and design a poster to
+            represent it. I came up with "Radio Scream", a station dedicated
+            entirely to iconic screams from movies. For the poster, I featured
+            several films known for their unforgettable scream scenes. Each
+            title was accompanied by details such as the length of the scream
+            and the name of the specific scene, emphasizing the power and drama
+            of these moments.
+          </p>
+        </div>
+      </div>
+
+      <div class="title" id="hekerock">
+        <img
+          class="imgBlur"
+          id="hekerockE"
+          src="./LUCA/eeeeen.png"
+          alt="hekerock"
+        />
+        <img
+          class="imgBlur"
+          id="hekerockT"
+          src="./LUCA/hekerock.jpeg"
+          alt="hekerock"
+        />
+        <button class="knopjeInfo">
+          <img class="info" src="./info.png" alt="info" />
+        </button>
+        <div class="content">
+          <p>
+            This was one of my first real-world assignments! :) Chiro Hekeko
+            holds an annual contest for the graphic design of their festival,
+            and I decided to submit my design—and ended up winning. <br />
+            <br />
+            Hekeko stands for Heverlee, Kessel-Lo, and Korbeek-Lo, so I
+            incorporated the geographical borders of these areas into the poster
+            and added a 3D effect to make them stand out. Once I had the concept
+            in place, I experimented with the layout, and that's how the final
+            design came together!
+          </p>
+        </div>
+      </div>
+
+      <div class="title" id="sjaal">
+        <div class="sjaalNina">
+          <img
+            class="sjaalScale imgBlur"
+            id="sjaalE"
+            src="./LUCA/IMG_0896.png"
+            alt="sjaal"
+          />
+          <img
+            class="sjaalScale imgBlur"
+            id="sjaalT"
+            src="./LUCA/IMG_1989.png"
+            alt="sjaal"
+          />
+        </div>
+        <img
+          class="sjaalScale imgBlur"
+          id="sjaalD"
+          src="./LUCA/IMG_3659.png"
+          alt="sjaal"
+        />
+        <button class="knopjeInfo">
+          <img class="info" src="./info.png" alt="info" />
+        </button>
+        <div class="content">
+          <p>
+            In my second year at Luca School of Arts, we were tasked with
+            designing a football scarf using a limited set of materials, themed
+            around a sport of our choice. After researching the materials, I
+            decided to create a scarf inspired by the board game Go. <br />
+            <br />
+            The contrast between the grid of the board and the round playing
+            stones influenced my design. I drew further inspiration from a
+            computer version of Go that highlights the best moves with gradient
+            colors. I used these gradient colors throughout the rest of the
+            scarf. These colors allowed key elements—such as the repeating
+            "gogogogo" on the back and the white stone-like dots on the front—to
+            stand out more clearly.
+          </p>
+        </div>
+      </div>
+
+      <div class="title" id="plaat">
+        <img
+          class="imgBlur"
+          id="plaatE"
+          src="./LUCA/IMG_3652.png"
+          alt="plaat"
+        />
+        <img
+          class="imgBlur"
+          id="plaatT"
+          src="./LUCA/LPbackcover.png"
+          alt="plaat"
+        />
+        <img class="imgBlur" id="plaatD" src="./LUCA/Vinyl.png" alt="plaat" />
+        <button class="knopjeInfo">
+          <img class="info" src="./info.png" alt="info" />
+        </button>
+        <div class="content">
+          <p>
+            This assignment was from my first year at Luca School of Arts, where
+            we were tasked with designing a vinyl cover for one of the albums
+            from a provided list. I chose "Music for Commercials" by Yasuaki
+            Shimizu, an album originally created for Japanese TV commercials.<br />
+            <br />
+            For inspiration, I delved into vintage Japanese commercials, which
+            are known for their vibrant and colourful aesthetic. During my
+            research, I also discovered tiny smiley faces in Japanese signage,
+            which was a fun addition to my design. Overall, designing this vinyl
+            was a fun experience, full of creativity and exploration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function toggleContentAndBlur(button) {
+        const parent = button.closest(".title");
+        const images = parent.querySelectorAll(".imgBlur");
+        const content = parent.querySelector(".content");
+
+        // Toggle blur effect
+        images.forEach((image) => {
+          image.classList.toggle("blurred");
+        });
+
+        // Toggle content zichtbaarheid
+        content.classList.toggle("visible");
+      }
+
+      // Voeg event listeners toe aan alle info knoppen
+      const infoButtons = document.querySelectorAll(".knopjeInfo");
+      infoButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          toggleContentAndBlur(this);
+        });
+      });
+
+      // Specifieke functie voor de carousel
+      function toggleCarouselBlur() {
+        const carousel = document.querySelector("#hoofden");
+        const images = carousel.querySelectorAll(".carousel-images");
+        const content = carousel.querySelector(".content");
+
+        // Toggle blur effect
+        images.forEach((image) => {
+          image.classList.toggle("blurred");
+        });
+
+        // Toggle content zichtbaarheid
+        content.classList.toggle("visible");
+      }
+
+      // Voeg een specifieke event listener toe voor de carousel info-knop
+      const carouselInfoButton = document.querySelector("#hoofden .knopjeInfo");
+      if (carouselInfoButton) {
+        carouselInfoButton.addEventListener("click", toggleCarouselBlur);
+      }
+
+      // Carousel functionaliteit
+      const list = document.querySelector(".list");
+      const item = document.querySelector(".slide");
+      const itemWidth = item.offsetWidth;
+
+      function handleClick(direction) {
+        if (direction === "previous") {
+          list.scrollBy({
+            left: -itemWidth,
+            behavior: "smooth",
+          });
+        } else {
+          list.scrollBy({
+            left: itemWidth,
+            behavior: "smooth",
+          });
+        }
+      }
+
+      // Voeg event listeners toe aan de carousel knoppen
+      document
+        .querySelector(".buttop--previous")
+        .addEventListener("click", () => handleClick("previous"));
+      document
+        .querySelector(".buttop--next")
+        .addEventListener("click", () => handleClick("next"));
+    });
+
+    window.addEventListener("scroll", function () {
+      const elementen = document.querySelectorAll(".blurr"); // aparte class voor scrollblur
+      const scrollPosition = window.scrollY;
+
+      elementen.forEach((el) => {
+        if (scrollPosition > 100) {
+          el.style.filter = `blur(${scrollPosition / 100}px)`;
+        } else {
+          el.style.filter = "blur(0px)";
+        }
+      });
+    });
+
+    document.addEventListener("scroll", function () {
+      let arrow = document.getElementById("arrowDown");
+      if (window.scrollY > 0) {
+        // Check if scrolled down from the top
+        arrow.classList.add("hidden"); // Add the hidden class to hide the arrow
+      } else {
+        arrow.classList.remove("hidden"); // Remove the hidden class to show the arrow
+      }
+    });
+
+    document.addEventListener("scroll", function () {
+      let arrow = document.getElementById("roos");
+      if (window.scrollY > 0) {
+        // Check if scrolled down from the top
+        arrow.classList.add("hidden"); // Add the hidden class to hide the arrow
+      } else {
+        arrow.classList.remove("hidden"); // Remove the hidden class to show the arrow
+      }
+    });
+
+    document.addEventListener("scroll", function () {
+      let arrow = document.getElementById("masters3");
+      if (window.scrollY > 0) {
+        // Check if scrolled down from the top
+        arrow.classList.add("hidden"); // Add the hidden class to hide the arrow
+      } else {
+        arrow.classList.remove("hidden"); // Remove the hidden class to show the arrow
+      }
+    });
+
+    document.addEventListener("scroll", function () {
+      let arrow = document.getElementById("nav");
+      if (window.scrollY > 0) {
+        // Check if scrolled down from the top
+        arrow.classList.add("hidden"); // Add the hidden class to hide the arrow
+      } else {
+        arrow.classList.remove("hidden"); // Remove the hidden class to show the arrow
+      }
+    });
+  </script>
+</html>
