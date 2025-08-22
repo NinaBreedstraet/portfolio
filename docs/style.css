@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Avara";
-  src: url("../Fonts/FT88-School.otf") format("opentype");
+  src: url("./Fonts/FT88-School.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url("../Fonts/arialnarrow.ttf") format("truetype");
+  src: url("./Fonts/arialnarrow.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Italic";
-  src: url("../Fonts/FT88-Italic.otf") format("truetype");
+  src: url("./Fonts/FT88-Italic.otf") format("truetype");
 }
 
 .intro {
@@ -159,13 +159,16 @@ a {
 
 .footer {
   position: fixed;
-  left: 2%;
   bottom: 0;
+  left: 0;
+  padding: 0.5%;
   text-align: left;
-  padding: 20px;
   width: 100%;
   background-color: whitesmoke;
-  color: white;
+}
+
+.footer img {
+  margin-left: 3%;
 }
 
 #instagram {
