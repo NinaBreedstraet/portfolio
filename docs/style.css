@@ -117,22 +117,22 @@ a {
 
 #sortLuca:hover {
   color: whitesmoke;
-  cursor: url("book.png"), auto;
+  cursor: url("./Images/book.png"), auto;
 }
 
 #sortEhb:hover {
   color: whitesmoke;
-  cursor: url("laptop.png"), auto;
+  cursor: url("./Images/laptop.png"), auto;
 }
 
 #realLife:hover {
   color: whitesmoke;
-  cursor: url("object.png"), auto;
+  cursor: url("./Images/object.png"), auto;
 }
 
 #contact:hover {
   color: whitesmoke;
-  cursor: url("mail.png"), auto;
+  cursor: url("./Images/mail.png"), auto;
 }
 
 #introtekst {
