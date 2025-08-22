@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NinaBreedstraet/portfolio.git"
+  },
+  "author": "Nina Breedstraet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NinaBreedstraet/portfolio/issues"
+  },
+  "homepage": "https://github.com/NinaBreedstraet/portfolio#readme"
+}
