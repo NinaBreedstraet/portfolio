@@ -858,9 +858,20 @@ a {
     margin-bottom: 5%;
   }
 
+  #hoofden {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #hoofden .slide img {
+    justify-content: center;
+    width: 100%;
+  }
+
   .head {
     text-align: center;
-    width: 100%;
+    width: 110%;
     margin: 0;
   }
 
@@ -914,5 +925,12 @@ a {
 
   .work {
     padding-top: 300%;
+  }
+
+  .content {
+    font-size: 11px;
+    padding: 2%;
+    top: 12%;
+    bottom: 0;
   }
 }
